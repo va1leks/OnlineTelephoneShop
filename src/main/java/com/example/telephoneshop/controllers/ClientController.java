@@ -35,6 +35,6 @@ public class ClientController {
 
     @PostMapping("/cart/add") // Добавьте этот эндпоинт
     public Client AddTelephoneToCart(@RequestParam long clientId, @RequestParam long telephoneId) {
-        return clientService.AddTelephoneToCart(clientId, telephoneId);
+        return clientService.AddTelephoneToCart(clientId,telephoneId);
     }
 }

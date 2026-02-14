@@ -1,0 +1,58 @@
+/* src/pages/TelephoneList.css */
+.telephone-list-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.telephone-list-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-input {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex: 1; /* Позволяет инпутам занимать доступное пространство */
+    min-width: 150px; /* Минимальная ширина для каждого инпута */
+}
+
+.search-input {
+    flex-basis: 100%; /* Поисковая строка занимает всю ширину */
+    max-width: 600px;
+}
+
+
+.telephone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.loading-message, .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 50px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+}
