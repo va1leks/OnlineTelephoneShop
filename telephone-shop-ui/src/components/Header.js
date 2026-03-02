@@ -7,11 +7,11 @@ const Header = ({ cartCount, onCartClick, onLogoClick }) => {
                 <h1 className="logo" onClick={onLogoClick} style={{cursor: 'pointer'}}>
                     📱 PhoneShop
                 </h1>
-                {/*<nav className="nav">*/}
-                {/*    <button className="cart-btn" onClick={onCartClick}>*/}
-                {/*        🛒 Корзина {cartCount > 0 && <span className="cart-count">{cartCount}</span>}*/}
-                {/*    </button>*/}
-                {/*</nav>*/}
+                <nav className="nav">
+                    <button className="cart-btn" onClick={onCartClick}>
+                        🛒 Корзина {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+                    </button>
+                </nav>
             </div>
         </header>
     );

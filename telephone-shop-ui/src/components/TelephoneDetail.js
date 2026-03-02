@@ -152,21 +152,21 @@ const TelephoneDetail = ({ telephone, onAddToCart, onBuyNow, onBack }) => {
                         )}
 
                         <div className="action-buttons">
-                            {/*<button*/}
-                            {/*    className={`add-to-cart-btn large ${telephone.status !== 'Available' ? 'disabled' : ''}`}*/}
-                            {/*    onClick={handleAddToCart}*/}
-                            {/*    disabled={telephone.status !== 'Available'}*/}
-                            {/*>*/}
-                            {/*    {telephone.status === 'Available' ? 'Добавить в корзину' : 'Нет в наличии'}*/}
-                            {/*</button>*/}
+                            <button
+                                className={`add-to-cart-btn large ${telephone.status !== 'Available' ? 'disabled' : ''}`}
+                                onClick={handleAddToCart}
+                                disabled={telephone.status !== 'Available'}
+                            >
+                                {telephone.status === 'Available' ? 'Добавить в корзину' : 'Нет в наличии'}
+                            </button>
 
-                            {/*<button*/}
-                            {/*    className={`buy-now-btn ${telephone.status !== 'Available' ? 'disabled' : ''}`}*/}
-                            {/*    onClick={handleBuyNow}*/}
-                            {/*    disabled={telephone.status !== 'Available'}*/}
-                            {/*>*/}
-                            {/*    Купить сейчас*/}
-                            {/*</button>*/}
+                            <button
+                                className={`buy-now-btn ${telephone.status !== 'Available' ? 'disabled' : ''}`}
+                                onClick={handleBuyNow}
+                                disabled={telephone.status !== 'Available'}
+                            >
+                                Купить сейчас
+                            </button>
                         </div>
                     </div>
                 </div>
